@@ -31,9 +31,9 @@ jobs:
           api_location: "api" # Api source code path - optional
           output_location: "dist/angular-basic" # Built app content directory - optional
           ###### End of Repository/Build Configurations ######
-        env: 
+        #env: 
             #DISABLE_NODEJS_BUILD: true
-            CUSTOM_BUILD_COMMAND: 'npm ci --all --force'
+            #CUSTOM_BUILD_COMMAND: 'npm ci --all --force'
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
