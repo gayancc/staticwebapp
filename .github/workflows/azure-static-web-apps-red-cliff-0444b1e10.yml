@@ -33,8 +33,7 @@ jobs:
           ###### End of Repository/Build Configurations ######
         env: 
             #DISABLE_NODEJS_BUILD: true
-            CUSTOM_BUILD_COMMAND: 'npm ci --all --force' 
-            RUN_BUILD_COMMAND: 'npm run build'
+            CUSTOM_BUILD_COMMAND: 'npm ci --all --force'
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
